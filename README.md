@@ -2,6 +2,11 @@
 
 Fine-tuning of DistilBERT on the IMDb movie-review dataset for binary sentiment classification. This repository contains a simple training script for quick experimentation with Hugging Face Transformers.
 
+**Example Prediction**
+
+- **Input:** This movie was incredible and moving
+- **Output:** Positive
+
 **Quick Start**
 
 - **Install dependencies:**
@@ -25,8 +30,8 @@ python train.py
 
 **Results**
 
-- **Accuracy:** ~0.85-0.90
-- **Loss:** ~0.30-0.40
+- **Test Accuracy:**: 0.881
+- **Test Loss:** 0.327
 - **Evaluation:** `trainer.predict()` is run at the end of `train.py` and prints evaluation metrics to stdout. 
 
 **Files**
