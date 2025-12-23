@@ -4,7 +4,7 @@ Fine-tuning of DistilBERT on the IMDb movie-review dataset for binary sentiment 
 
 **Example Prediction**
 
-- **Input:** This movie was incredible and moving
+- **Input:** This movie was great
 - **Output:** Positive
 
 **Quick Start**
@@ -30,7 +30,7 @@ python train.py
 
 **Results**
 
-- **Test Accuracy:**: 0.881
+- **Test Accuracy:** 0.881
 - **Test Loss:** 0.327
 - **Evaluation:** `trainer.predict()` is run at the end of `train.py` and prints evaluation metrics to stdout. 
 
