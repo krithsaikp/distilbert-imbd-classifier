@@ -28,6 +28,26 @@ python train.py
 - **Config (defaults in `train.py`):** output dir `./bert-finetuned-imdb`, learning rate `2e-5`, `per_device_train_batch_size=2`, `per_device_eval_batch_size=8`, `num_train_epochs=2`, `max_length=128`
 - **Dataset subset:** training subset = 5,000 samples, test subset = 2,000 samples (selected for faster experiments)
 
+**Prediction (predict.py)**
+
+Use the included CLI to run quick single-sentence predictions.
+
+Example:
+
+```bash
+python predict.py "This movie was great"
+# -> Positive review
+```
+
+Use a custom model checkpoint:
+
+```bash
+python predict.py "Terrible movie" --model ./bert-finetuned-imdb/checkpoint-5000
+```
+
+Notes:
+- Default model path is `./bert-finetuned-imdb/checkpoint-5000` (see `predict.py`).
+
 **Results**
 
 - **Test Accuracy:** 0.881
