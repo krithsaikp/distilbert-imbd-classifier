@@ -5,7 +5,7 @@ Fine-tuning of DistilBERT on the IMDb movie-review dataset for binary sentiment 
 **Example Prediction**
 
 - **Input:** This movie was great
-- **Output:** Positive
+- **Output:** Positive review
 
 **Quick Start**
 
@@ -48,7 +48,7 @@ python train.py
 **Next steps**
 
 - Add explicit evaluation metrics (accuracy, precision/recall) and save them to a JSON file.
-- Add a small inference script demonstrating how to load the saved model and run predictions on new text.
+- Deploy the model
 - Train on full IMDb dataset using GPU
 
 ---
